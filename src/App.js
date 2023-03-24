@@ -1,5 +1,13 @@
+import Header from './common/components/Header'
+import Home from './pages/Home'
+
 const App = () => {
-  return <h1>Hello hfghfgjgfyjfghkghjkhgjk 2</h1>
+  return (
+    <div className="App">
+      <Header />
+      <Home />
+    </div>
+  )
 }
 
 export default App
