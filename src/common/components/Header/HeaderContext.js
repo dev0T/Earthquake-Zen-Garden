@@ -22,7 +22,6 @@ export const HeaderContextProvider = ({ reducer, children }) => {
   useEffect(() => {
     const fetchHeaderData = async () => {
       const { title, logoImage } = await fileService.getSiteData()
-      console.log(title)
       dispatch(setHeaderData({ title, logoImage }))
     }
     fetchHeaderData()

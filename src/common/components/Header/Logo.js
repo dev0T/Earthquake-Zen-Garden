@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom'
+
 const Logo = ({ logo }) => {
   return (
     <div className="Header-Logo">
-      <a href="">
+      <Link to="/">
         <img src={logo} alt="App Logo" className="Logo-Image"></img>
-      </a>
+      </Link>
     </div>
   )
 }

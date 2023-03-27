@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom'
+
 const UserNav = ({ user }) => {
   return (
     <div className="User-Nav">
-      <a href="" className="User-Link">{`Welcome ${user}`}</a>
+      <Link to="profile" className="User-Link">{`Welcome ${user}`}</Link>
     </div>
   )
 }

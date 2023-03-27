@@ -10,7 +10,8 @@ const config = {
   devServer: {
     // static: { directory: outputPath },
     // client: { overlay: false },
-    hot: true
+    hot: true,
+    historyApiFallback: true
   },
   entry: {
     main: './src/index.js'

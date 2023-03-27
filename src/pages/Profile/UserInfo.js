@@ -1,30 +1,24 @@
+import Avatar from './Avatar'
+import InfoRow from './InfoRow'
 import { useProfileStateValue } from './ProfileContext'
 
 const UserInfo = () => {
-  const [state] = useProfileStateValue()
+  const [{ avatarImage, firstName, lastName, phone, email, bio }] =
+    useProfileStateValue()
   return (
-    <div className="User-Info">
-      <h3>Profile</h3>
-      <img src={state.avatarImage} alt={`${state.firstName} avatar`}></img>
-      <div className="Display-Info">
-        <span>First Name</span>
-        <span>{state.firstName}</span>
+    <div className="User-Profile">
+      <div className="Profile-Header">
+        <h3>Profile</h3>
       </div>
-      <div className="Display-Info">
-        <span>Last Name</span>
-        <span>{state.lastName}</span>
-      </div>
-      <div className="Display-Info">
-        <span>Phone</span>
-        <span>{state.phone}</span>
-      </div>
-      <div className="Display-Info">
-        <span>Email</span>
-        <span>{state.email}</span>
-      </div>
-      <div className="Display-Info">
-        <span>Bio</span>
-        <span>{state.bio}</span>
+      <div className="Profile-Contents">
+        <Avatar avatarUrl={avatarImage} userName={firstName} />
+        <div className="User-Info">
+          <InfoRow fieldName={'First Name'} fieldValue={firstName} />
+          <InfoRow fieldName={'Last Name'} fieldValue={lastName} />
+          <InfoRow fieldName={'Phone'} fieldValue={phone} />
+          <InfoRow fieldName={'Email'} fieldValue={email} />
+          <InfoRow fieldName={'Bio'} fieldValue={bio} />
+        </div>
       </div>
     </div>
   )
