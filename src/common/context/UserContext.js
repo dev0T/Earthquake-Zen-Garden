@@ -9,7 +9,12 @@ import {
 } from 'react'
 
 const initialState = {
-  firstName: ''
+  firstName: '',
+  lastName: '',
+  avatarImage: '',
+  phone: '',
+  email: '',
+  bio: ''
 }
 
 const UserContext = createContext([initialState, () => initialState])
@@ -20,8 +25,8 @@ export const UserContextProvider = ({ reducer, children }) => {
 
   useEffect(() => {
     const fetchUserData = async () => {
-      const { firstName } = await fileService.getProfileData()
-      dispatch(setUserData({ firstName }))
+      const profile = await fileService.getProfileData()
+      dispatch(setUserData(profile))
     }
     fetchUserData()
   }, [])

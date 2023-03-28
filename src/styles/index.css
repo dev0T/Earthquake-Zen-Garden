@@ -8,6 +8,14 @@ body {
   margin: 0;
 }
 
+a:link {
+  color: #0011bb;
+}
+
+a:visited {
+  color: #6600cc;
+}
+
 .App {
   font-family: sans-serif;
 }
@@ -42,22 +50,22 @@ body {
   font-weight: bold;
 }
 
-.User-Profile {
+.Page {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.Profile-Header {
+.Page-Header {
   align-self: center;
   padding: 8px;
 }
 
-.Profile-Contents {
+.Page-Contents {
   display: flex;
   align-self: center;
   justify-content: space-evenly;
-  max-width: 35%;
+  max-width: 40%;
 }
 
 .Avatar-Container {
@@ -72,6 +80,7 @@ body {
   display: grid;
   grid-template-columns: subgrid;
   gap: 8px;
+  max-width: 53%;
 }
 
 .Info-Row {
@@ -87,4 +96,25 @@ body {
 .Field-Value {
   font-weight: bold;
   color: #777777;
+}
+
+.List-Content {
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+  max-width: 45%;
+}
+
+.Table-Column-Header {
+  cursor: pointer;
+  padding: 16px 16px;
+}
+
+.Mag-Row {
+  text-align: center;
+}
+
+.Detail-Info {
+  display: grid;
+  grid-template-columns: subgrid;
 }

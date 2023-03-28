@@ -11,8 +11,8 @@ const getProfileData = async () => {
 }
 
 const getEarthquakeData = async () => {
-  const { data: earthcakeData } = data
-  return earthcakeData
+  const { data: earthquakeData } = data
+  return earthquakeData
 }
 
 const fileService = {
