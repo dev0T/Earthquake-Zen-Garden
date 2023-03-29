@@ -1,0 +1,120 @@
+body {
+  --main-color1: #ededed;
+  --main-color2: #777777;
+  --main-color2: #444444;
+  --main-color2: #0011bb;
+  --main-color2: #6600cc;
+
+  margin: 0;
+}
+
+a:link {
+  color: #0011bb;
+}
+
+a:visited {
+  color: #6600cc;
+}
+
+.App {
+  font-family: sans-serif;
+}
+
+.Header {
+  background-color: #ededed;
+  display: flex;
+  justify-content: space-between;
+  margin: none;
+}
+
+.Header-Title {
+  color: #777777;
+  margin: 0.5em;
+}
+
+.Header-Logo {
+  margin: 1em;
+}
+
+.Logo-Image {
+  width: auto;
+  height: auto;
+  border-radius: 20%;
+}
+
+.User-Nav {
+  margin: 2em;
+}
+
+.User-Link {
+  font-weight: bold;
+}
+
+.Page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Page-Header {
+  align-self: center;
+  padding: 8px;
+}
+
+.Page-Contents {
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+  max-width: 40%;
+}
+
+.Avatar-Container {
+  margin-right: 16px;
+}
+
+.User-Avatar {
+  max-width: 200px;
+}
+
+.User-Info {
+  display: grid;
+  grid-template-columns: subgrid;
+  gap: 8px;
+  max-width: 53%;
+}
+
+.Info-Row {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.Field-Name {
+  font-weight: bold;
+  color: #444444;
+}
+
+.Field-Value {
+  font-weight: bold;
+  color: #777777;
+}
+
+.List-Content {
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+  max-width: 45%;
+}
+
+.Table-Column-Header {
+  cursor: pointer;
+  padding: 16px 16px;
+}
+
+.Mag-Row {
+  text-align: center;
+}
+
+.Detail-Info {
+  display: grid;
+  grid-template-columns: subgrid;
+}
